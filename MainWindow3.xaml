@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApplication1.MainWindow3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="513.4" Width="855" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid Margin="55,0,-0.2,16">
+        <DataGrid x:Name="myDataGrid" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Height="299" Width="520" SelectionChanged="myDataGrid_SelectionChanged"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="34,23,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="BrojRezervacije" HorizontalAlignment="Left" Margin="21,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="SobaID" HorizontalAlignment="Left" Margin="28,57,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Broj odraslih" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Broj dece" HorizontalAlignment="Left" Margin="21,133,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="employee_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="145,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sobaIdTxt" HorizontalAlignment="Left" Height="23" Margin="145,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="napomenaTxt" HorizontalAlignment="Left" Height="23" Margin="145,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="add_btn" Content="Add" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="75" Click="add_btn_Click"/>
+        <Button x:Name="update_btn" Content="Update" HorizontalAlignment="Left" Margin="109,339,0,0" VerticalAlignment="Top" Width="75" Click="update_btn_Click" IsEnabled="False"/>
+        <Button x:Name="delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="218,339,0,0" VerticalAlignment="Top" Width="76" Click="delete_btn_Click" IsEnabled="False"/>
+        <Button x:Name="reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="109,378,0,0" VerticalAlignment="Top" Width="75" Click="reset_btn_Click"/>
+        <Label x:Name="label4_Copy2" Content="Iznos" HorizontalAlignment="Left" Margin="28,181,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="kontaktTxt" HorizontalAlignment="Left" Height="24" Margin="145,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="kontaktTxt_TextChanged"/>
+        <TextBox x:Name="novoo" HorizontalAlignment="Left" Height="26" Margin="145,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="napTxt" HorizontalAlignment="Left" Height="26" Margin="145,230,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" MouseDoubleClick="napTxt_MouseDoubleClick"/>
+        <Label x:Name="label4_Copy" Content="Iznos" HorizontalAlignment="Left" Margin="28,181,0,0" VerticalAlignment="Top" Height="26"/>
+        <Label x:Name="label4_Copy1" Content="Napomena" HorizontalAlignment="Left" Margin="28,238,0,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="brSobeTxt" HorizontalAlignment="Left" Height="26" Margin="145,274,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label x:Name="label4_Copy3" Content="Broj sobe" HorizontalAlignment="Left" Margin="28,282,0,0" VerticalAlignment="Top" Height="26"/>
+
+    </Grid>
+</Window>

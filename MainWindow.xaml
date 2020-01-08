@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="513.4" Width="855" Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid Margin="55,0,-0.2,-50">
+        <DataGrid x:Name="myDataGrid" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Height="299" Width="520" SelectionChanged="myDataGrid_SelectionChanged"/>
+        <Label x:Name="label" Content="Broj rezervacije" HorizontalAlignment="Left" Margin="34,23,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="DatumOd" HorizontalAlignment="Left" Margin="34,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="DatumDo" HorizontalAlignment="Left" Margin="36,85,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="NacinRezervisanja" HorizontalAlignment="Left" Margin="18,125,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="Napomena" HorizontalAlignment="Left" Margin="36,164,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="employee_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="145,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tipTxt" HorizontalAlignment="Left" Height="24" Margin="145,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nacinTxt" HorizontalAlignment="Left" Height="23" Margin="145,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="napomenaTxt" HorizontalAlignment="Left" Height="23" Margin="145,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datumOD_picker" HorizontalAlignment="Left" Margin="145,54,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="add_btn" Content="Add" HorizontalAlignment="Left" Margin="10,339,0,0" VerticalAlignment="Top" Width="75" Click="add_btn_Click"/>
+        <Button x:Name="update_btn" Content="Update" HorizontalAlignment="Left" Margin="109,339,0,0" VerticalAlignment="Top" Width="75" Click="update_btn_Click" IsEnabled="False"/>
+        <Button x:Name="delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="218,339,0,0" VerticalAlignment="Top" Width="76" Click="delete_btn_Click" IsEnabled="False"/>
+        <Button x:Name="reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="109,378,0,0" VerticalAlignment="Top" Width="75" Click="reset_btn_Click"/>
+        <DatePicker x:Name="datumDO_picker" HorizontalAlignment="Left" Margin="145,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4_Copy" Content="Tip pansiona" HorizontalAlignment="Left" Margin="28,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4_Copy1" Content="Naziv Gosta" HorizontalAlignment="Left" Margin="28,235,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4_Copy2" Content="ZaposleniID" HorizontalAlignment="Left" Margin="31,266,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4_Copy3" Content="GostID" HorizontalAlignment="Left" Margin="31,303,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nazivTxt" HorizontalAlignment="Left" Height="24" Margin="145,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MouseDoubleClick="nazivTxt_MouseDoubleClick" MouseEnter="nazivTxt_MouseEnter"/>
+        <TextBox x:Name="tipTxt_novi" HorizontalAlignment="Left" Height="24" Margin="145,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="zapTxt" HorizontalAlignment="Left" Height="24" Margin="145,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="GostTxt" HorizontalAlignment="Left" Height="24" Margin="145,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

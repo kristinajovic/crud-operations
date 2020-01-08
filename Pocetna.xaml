@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.Pocetna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Pocetna" Height="450" Width="800">
+    <Grid>
+        <Button Content="Rezervacija" HorizontalAlignment="Left" Margin="30,31,0,0" VerticalAlignment="Top" Width="109" Height="40" Click="Button_Click"/>
+        <Button Content="Gost" HorizontalAlignment="Left" Height="38" Margin="178,33,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click_1"/>
+        <Button Content="Rezervisane sobe" HorizontalAlignment="Left" Margin="337,34,0,0" VerticalAlignment="Top" Width="111" Height="37" Click="Button_Click_2"/>
+        <Button Content="Naselje" HorizontalAlignment="Left" Margin="507,35,0,0" VerticalAlignment="Top" Width="102" Height="36" Click="Button_Click_3"/>
+        <Button Content="Grad" HorizontalAlignment="Left" Height="40" Margin="647,31,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_4"/>
+        <Button Content="Kupac pravno lice" HorizontalAlignment="Left" Height="39" Margin="33,129,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click_5"/>
+
+    </Grid>
+</Window>
